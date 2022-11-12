@@ -15,7 +15,7 @@ module.exports = defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       preserveEntrySignatures: 'allow-extension',
-      input: 'src/b.ts',
+      input: 'src/index.ts',
       output: [
         {
           ...commonOutput,
