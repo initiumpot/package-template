@@ -1,6 +1,5 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
-import dts from 'vite-plugin-dts'
 import progress from 'vite-plugin-progress'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
@@ -32,10 +31,6 @@ module.exports = defineConfig({
   },
   plugins: [
     tsconfigPaths(),
-    dts({
-      entryRoot: resolve(__dirname, 'src'),
-      outputDir: resolve(__dirname, 'dist/types')
-    }),
     progress()
   ]
 })
