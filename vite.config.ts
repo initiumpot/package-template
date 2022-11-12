@@ -9,7 +9,7 @@ const commonOutput = {
   sourcemap: 'inline'
 } as const
 
-module.exports = defineConfig({
+export default defineConfig({
   build: {
     emptyOutDir: true,
     rollupOptions: {
