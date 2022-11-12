@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "postinstall": "husky install",
+    "preinstall": "npm config set '//npm.pkg.github.com/:_authToken' \"${GITHUB_PACKAGES_TOKEN}\"",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable",
     "build": "vite build",
