@@ -1,6 +1,6 @@
 {
   "name": "@initiumpot/package-template",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Initium",
   "description": "A template with Typescript & SWC & Auto-versioning & Packages to create an initium package",
   "repository": "https://github.com/initiumpot/package-template",
