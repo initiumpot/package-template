@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "postinstall": "husky install",
-    "preinstall": "npm config set '//npm.pkg.github.com/:_authToken' \"${GITHUB_PACKAGES_TOKEN}\"",
+    "preinstall": "env-var npm config set '//npm.pkg.github.com/:_authToken' \"{{GITHUB_PACKAGES_TOKEN}}\"",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable",
     "build": "vite build",
@@ -26,6 +26,7 @@
     "lint": "prettier --config .prettierrc \"./**/*.{ts,jsx}\" --check"
   },
   "devDependencies": {
+    "@rauschma/env-var": "^1.0.1",
     "@swc-node/register": "^1.5.4",
     "@swc/cli": "^0.1.57",
     "@swc/core": "^1.3.14",
